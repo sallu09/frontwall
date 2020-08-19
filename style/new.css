@@ -1,0 +1,139 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home{
+	background-image: url(../bgpic.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	z-index:1;
+}
+.home .home-content{
+	flex-basis: 100%;
+	max-width: 100%;
+	height: 100vh;
+	z-index:2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home .home-content .pic-box{
+	/*background-color: green;*/
+	flex-basis: 50%;
+	max-width: 50%;
+	padding: 0 25px 0 15px;
+	display: flex;
+	justify-content: flex-end;
+}
+.home .home-content .pic-box .pic{
+	height: 320px;
+	width: 320px;
+	background-image: url('../salpic.jpg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	border: 10px solid rgba(0,0,0,0.5);
+}
+.home .home-content .text{
+	/*background-color: gray;*/
+	flex-basis: 50%;
+	max-width: 50%;
+	padding: 0 15px;
+}
+.home .home-content .text h3{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 5px 0;
+  padding: 0;
+}
+.home .home-content .text h1{
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 5px 0px;
+    padding: 0px;
+}
+.home .home-content .text h1 span{
+	 font-weight: 700;
+	 color:#ffcc00;
+}
+.home .home-content .text p{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 30px;
+	font-weight: 400;
+	margin: 0 0 25px;
+}
+.home .home-content .text .home-btns .btn-bg{
+	margin-right: 20px;
+}
+.btn-bg{
+   background-color: #ffcc00;
+   border: 1px solid #ffcc00;
+   padding: 10px 30px;
+   display: inline-block;
+   color: #ffffff;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 15px;
+   border-radius: 25px;
+   transition: all .5 ease;
+}
+.btn-bg:hover{
+   background-color: transparent;
+   color:#ffcc00;
+}
+.btn-bg span,.btn-link span{
+	margin-right: 7px;
+}
+.btn-link{
+   background-color:transparent;
+   border: 1px solid #ffcc00;
+   padding: 10px 30px;
+   display: inline-block;
+   color: #ffcc00;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 15px;
+   border-radius: 25px;
+   transition: all .5 ease;
+}
+.btn-link:hover{
+	background-color:#ffcc00;
+	color: #ffffff; 
+}
